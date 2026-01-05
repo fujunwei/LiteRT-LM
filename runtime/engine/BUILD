@@ -135,6 +135,8 @@ cc_library(
         "@stb//:stb_image",
         "@litert//tflite/profiling:memory_info",
         "@litert//tflite/profiling:memory_usage_monitor",
+        "@litert//litert/vendors/intel_openvino/dispatch:LiteRtDispatch",
+        "@litert//litert/vendors/intel_openvino/compiler:LiteRtCompilerPlugin",
     ] + select({
         "//conditions:default": ["//runtime/core:engine_impl"],
     }) + select(

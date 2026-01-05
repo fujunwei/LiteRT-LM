@@ -453,3 +453,7 @@ neuro_pilot()
 load("@litert//third_party/google_tensor:workspace.bzl", "google_tensor")
 
 google_tensor()
+
+load("@litert//third_party/intel_openvino:openvino.bzl", "openvino_configure")
+
+openvino_configure()
